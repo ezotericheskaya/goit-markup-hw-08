@@ -1,0 +1,55 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: $tittle-text-color;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 10px 32px;
+  border: 1px solid $accent-button-color;
+  border-radius: 4px;
+  min-width: 200px;
+  background-color: $accent-button-color;
+  color: $accent-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  fill: white;
+}

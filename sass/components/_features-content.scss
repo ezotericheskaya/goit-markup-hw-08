@@ -1,0 +1,55 @@
+.section-features .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-tittle {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $tittle-text-color;
+}
+
+.items {
+  width: calc((100% - 3 * 30px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: 70px, 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $backgr-color-botton;
+    border-radius: 4px;
+  }
+}
+// не отображаются свг
+@each $features in antenna, clock, diagram, astronaut {
+  .#{$features}::before {
+    background-image: url("../images/#{$features}.svg");
+  }
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $primery-text-color;
+}
