@@ -293,7 +293,7 @@ a {
   width: 100%;
   max-width: 480px;
   max-height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/mobile/Header-mobile@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/Header-mobile@1x.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -312,7 +312,7 @@ a {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/mobile/Header-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/Header-mobile@2x.jpg);
   }
 }
 
@@ -324,7 +324,7 @@ a {
     width: 100%;
     max-width: 768px;
     max-height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/tablet/Header-tablet@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/Header-tablet@1x.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -336,7 +336,7 @@ a {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/tablet/Header-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/Header-tablet@2x.jpg);
   }
 }
 
@@ -346,7 +346,7 @@ a {
     width: 100%;
     max-width: 1600px;
     max-height: 600px;
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../../../images/desktop/header-desktop@1x.jpg);
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/desktop/header-desktop@1x.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -364,7 +364,7 @@ a {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/desktop/header-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header-desktop@2x.jpg);
   }
 }
 
@@ -689,7 +689,6 @@ a {
 }
 
 .team-names {
-  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
