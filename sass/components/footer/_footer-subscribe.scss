@@ -7,19 +7,16 @@
 
   justify-content: space-between;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px){
-      flex-grow: 1;
-
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
   }
 
-
-  @media screen and (max-width: 1199px){
-      flex-direction: column;
-      align-items: center;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media screen and (min-width: 1200px){
-
+  @media screen and (min-width: 1200px) {
   }
 
   & .button-primary {
@@ -30,28 +27,27 @@
     align-items: center;
     justify-content: space-between;
 
-    fill: #ffffff;
-    @media screen and (min-width: 1200px){
-        margin-left: 12px;
-        align-self: flex-end;
-      }
+    fill: $accent-white-color;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+      align-self: flex-end;
+    }
   }
 }
 
 .footer-label {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-    @media screen and (max-width: 1199px){
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-
-    @media screen and (min-width: 1200px){
-        align-items: flex-start;
-    }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 
 .subscribe {
@@ -61,8 +57,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
-
+  color: $accent-white-color;
 }
 
 .footer-input {
@@ -73,14 +68,14 @@
   width: 100%;
   min-height: 50px;
   max-width: 450px;
-  color: #ffffff;
+  color: $accent-white-color;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     min-width: 358px;
   }
 }
