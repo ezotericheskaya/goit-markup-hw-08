@@ -411,16 +411,20 @@ a {
 }
 
 .features-list {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   outline: 1px red;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+  }
+}
+
 .feauture-item {
   width: 100%;
-  max-width: 450px;
-  max-height: 120px;
+  max-width: 480px;
   margin-bottom: 30px;
 }
 
@@ -452,6 +456,8 @@ a {
 }
 
 .features-tittle {
+  max-width: 480px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1, 142;
@@ -469,6 +475,18 @@ a {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .feauture-item {
+    max-width: 354px;
+  }
+  .feauture-item:nth-last-child(2n) {
+    margin-right: 30px;
+  }
+  .features-tittle {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -489,6 +507,8 @@ a {
     margin-right: 30px;
   }
   .feauture-item::before {
+    max-width: 480px;
+    margin-bottom: 30px;
     display: block;
     content: "";
     height: 120px;
@@ -510,6 +530,61 @@ a {
   .astronaut::before {
     background-image: url("../images/astronaut.svg");
   }
+}
+
+.business-section {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.tittles {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.business-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.b-item {
+  position: relative;
+}
+
+.b-item:not(:last-child) {
+  margin-right: 30px;
+  display: list-item;
+}
+
+.business-tittle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  /* outline: 2px solid red; */
+}
+
+.business-text {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .team-section {
