@@ -749,24 +749,58 @@ a {
   height: 20px;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-.clients-tittle {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.clients-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+@media screen and (max-width: 1199px) {
+  .clients-tittle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-tittle {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
 }
 
 .client-link {
@@ -786,12 +820,29 @@ a {
   fill: #2196f3;
 }
 
-.clients-item {
-  width: 170px;
-  height: 90px;
+@media screen and (max-width: 767px) {
+  .clients-item {
+    width: 210px;
+    height: 90px;
+    margin: 15px;
+  }
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .clients-item {
+    width: 226px;
+    height: 90px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+    height: 90px;
+  }
+  .clients-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
