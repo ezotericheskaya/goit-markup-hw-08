@@ -121,7 +121,8 @@ a {
   display: none;
 }
 
-.burger-menu-btn {
+.burger-menu-btn,
+.mobile-close-btn {
   background-color: transparent;
   border: none;
   outline: none;
@@ -286,31 +287,34 @@ a {
 }
 
 .mobile-menu {
-  position: absolute;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-101%);
   z-index: 2;
+  padding: 48px 40px;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  padding: 48px 40px;
-  z-index: 2;
-  top: 0%;
-  left: 50%;
-  opacity: 1;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
 }
 
-@media screen and (min-width: 678px) {
+.mobile-menu.is-open {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu-btn {
+    display: none;
+  }
   .mobile-menu {
     display: none;
   }
-}
-
-.mobile-menu .is-open {
-  opacity: 1;
 }
 
 .burger-list {
@@ -327,11 +331,75 @@ a {
   padding-bottom: 32px;
 }
 
+.burger-link-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
 .current-burger {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.mobile-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.burger-contacts {
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.burger-contact-list:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.burger-contact-phone {
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.burger-contact-mail {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.burger-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.mobile-social {
+  color: #2196f3;
+}
+
+.mobile-social::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.burger-social-link:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .section-hero {

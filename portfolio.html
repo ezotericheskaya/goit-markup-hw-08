@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
- <header class="header">
+    <header class="header">
       <div class="container">
         <a href="./index.html" class="web-logo"
           >Web<span class="studio-logo">Studio</span>
@@ -46,12 +46,47 @@
             >
           </li>
         </ul>
-        <button type="button" class="burger-menu-btn">
+        <button type="button" class="burger-menu-btn"data-menu-button>
           <svg class="burger-menu-icon">
             <use href="../images/sprite.svg#burger-menu"></use>
           </svg>
         </button>
       </div>
+           <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-close-btn" data-menu-close>
+                <svg class="close-icon">
+                    <use href="../images/sprite.svg#burger-close"></use>
+                </svg>
+            </button>
+          <ul class="burger-list">
+            <li class="burger-link">
+              <a href="./index.html" class="current-burger">Студия</a>
+            </li>
+            <li class="burger-link">
+              <a href="./portfolio.html" class="burger-link-nav">Портфолио</a>
+            </li>
+            <li class="burger-link"><a href="" class="burger-link-nav">Контакты</a></li>
+          </ul>
+          
+        <ul class="burger-contacts">
+                    <li class="burger-contact-list">
+            <a href="tel:+38(096)1111111" class="burger-contact-phone">
+              +380961111111</a>
+          </li>
+          <li class="burger-contact-list">
+            <a href="mailto:info@devstudio.com" class="burger-contact-mail">
+              info@devstudio.com</a>
+          </li>
+
+        </ul>
+          <ul class="burger-social-list">
+              <li class="burger-social-link"><a href="#" class="mobile-social">Instagram</a></li>
+              <li class="burger-social-link"><a href="#" class="mobile-social">Twitter</a></li>
+              <li class="burger-social-link"><a href="#" class="mobile-social">Facebook</a></li>
+              <li class="burger-social-link"><a href="#" class="mobile-social">LinkedIn</a></li>
+          </ul>
+
+        </div>
     </header>
 
 
@@ -345,6 +380,7 @@
       </div>
     </footer>  
 
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
