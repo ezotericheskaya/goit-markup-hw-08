@@ -3,7 +3,6 @@
 }
 
 .features-list {
-  // display: flex;
   flex-wrap: wrap;
   justify-content: center;
   outline: 1px red;
@@ -16,8 +15,6 @@
 .feauture-item {
   width: 100%;
   max-width: 480px;
-  // max-width: 450px;
-  // max-height: 120px;
   margin-bottom: 30px;
 
   &::before {
@@ -40,7 +37,6 @@
 
 .features-tittle {
   max-width: 480px;
-  margin-bottom: 30px;
 
   font-weight: bold;
   font-size: 14px;
