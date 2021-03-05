@@ -11,179 +11,257 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-    <header class="header">
-        <div class="container">
-            <nav class=" nav-main">
-                <a href="./index.html" class="web-logo">Web<span class="studio-logo">Studio</span>
-                </a>
-                <ul class="links">
-                    <li class="item"><a href="./index.html" class="nav-link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="current-link">Портфолио</a></li>
-                    <li class="item"><a href="" class="nav-link">Контакты</a></li>
-                </ul>
-            </nav>
-    
-            <ul class="contacts-nav">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="contact-link">
-                        <svg class="contact-icon" width="16" height="16">
-                            <use href="./images/sprite.svg#icon-mail"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="item"><a href="tel:+38(096)1111111" class="contact-link">
-                        <svg class="contact-icon" width="10" height="16">
-                            <use href="./images/sprite.svg#icon-phone"></use>
-                        </svg>
-                        +380961111111</a></li>
-            </ul>
-        </div>
-    
+ <header class="header">
+      <div class="container">
+        <a href="./index.html" class="web-logo"
+          >Web<span class="studio-logo">Studio</span>
+        </a>
+        <nav class="nav-main">
+          <ul class="navigation-link">
+            <li class="item">
+              <a href="./index.html" class="nav-link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="current-link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts-nav">
+          <li class="contakt-item">
+            <a href="mailto:info@devstudio.com" class="contact-link">
+              <svg class="contact-icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contakt-item">
+            <a href="tel:+38(096)1111111" class="contact-link">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              +380961111111</a
+            >
+          </li>
+        </ul>
+        <button type="button" class="burger-menu-btn">
+          <svg class="burger-menu-icon">
+            <use href="../images/sprite.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
     </header>
 
-    <main>
 
-       <section class="portfolio">
-           <!-- <h1>Портфолио</h1> потом спрячется -->
-        
-    <div class="container-portfolio">
-                <ul class="filtres">
-                    <li class="buttons-filtres"><button type="button" class="button">Все</button></li>
-                    <li class="buttons-filtres"><button type="button" class="button">Веб-сайты</button></li>
-                    <li class="buttons-filtres"><button type="button" class="button">Приложения</button></li>
-                    <li class="buttons-filtres"><button type="button" class="button">Дизайн</button></li>
-                    <li class="buttons-filtres"><button type="button" class="button">Маркетинг</button></li>
+     <main>
+<section class="our-work">
+            <h1 class="visually-hidden">Примеры работ</h1>
+            <div class="container">
+                <ul class="filter-list">
+                    <li class="filter-list-item">       
+                        <button type="button" class="filter-button">Все</button> 
+                    </li>    
+                    <li class="filter-list-item">
+                        <button type="button" class="filter-button">Веб-сайты</button>
+                    </li>
+                    <li class="filter-list-item">
+                        <button type="button" class="filter-button">Приложения</button>
+                    </li>
+                    <li class="filter-list-item">
+                        <button type="button" class="filter-button">Дизайн</button>
+                    </li> 
+                    <li class="filter-list-item">
+                        <button type="button" class="filter-button">Маркетинг</button>
+                    </li>
+                </ul>     
+                <ul class="work-examples">
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/website1-desktop@1x.webp 1x, ./images/desktop/website1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/desktop/website1-desktop@1x.jpg 1x, ./images/desktop/website1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/website1-tablet@1x.webp 1x, ./images/tablet/website1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images/tablet/website1-tablet@1x.jpg 1x, ./images/tablet/website1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/website1-mobile@1x.webp 1x, ./images/mobile/website1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images/mobile/website1-mobile@1x.jpg 1x, ./images/mobile/website1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="/images/desktop/website1-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Технокряк</h2>
+                                <p class="portfolio-text">Веб-сайт</p>
+                            </div>     
+                        </a>   
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/design1-desktop@1x.webp 1x, ./images/desktop/design1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/desktop/design1-desktop@1x.jpg 1x, ./images/desktop/design1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/design1-tablet@1x.webp 1x, ./images/tablet/design1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images/tablet/design1-tablet@1x.jpg 1x, ./images/tablet/design1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/design1-mobile@1x.webp 1x, ./images/mobile/design1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images/mobile/design1-mobile@1x.jpg 1x, ./images/mobile/design1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./images/desktop/design1-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>                                    
+                            <div class="work-examples-item-description">    
+                                <h2>Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/app1-desktop@1x.webp 1x, ./images/desktop/app1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/desktop/app1-desktop@1x.jpg 1x, ./images/desktop/app1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/app1-tablet@1x.webp 1x, ./images/tablet/app1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images/tablet/app1-tablet@1x.jpg 1x, ./images/tablet/app1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/app1-mobile@1x.webp 1x, ./images/mobile/app1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images/mobile/app1-mobile@1x.jpg 1x, ./images/mobile/app1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./images/desktop/app1-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Ресторан Seafood</h2>
+                                <p class="portfolio-text">Приложение</p>
+                            </div>
+                        </a>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/marketing1-desktop@1x.webp 1x, ./images/desktop/marketing1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/desktop/marketing1-desktop@1x.jpg 1x, ./images/desktop/marketing1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/marketing1-tablet@1x.webp 1x, ./images/tablet/marketing1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images/tablet/marketing1-tablet@1x.jpg 1x, ./images/tablet/marketing1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/marketing1-mobile@1x.webp 1x, ./images/mobile/marketing1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images/mobile/marketing1-mobile@1x.jpg 1x, ./images/mobile/marketing1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./images/desktop/marketing1-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Проект Prime</h2>                 
+                                <p class="portfolio-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/app2-desktop@1x.webp 1x, ./images/desktop/app2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/desktop/app2-desktop@1x.jpg 1x, ./images/desktop/app2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/app2-tablet@1x.webp 1x, ./images/tablet/app2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images/tablet/app2-tablet@1x.jpg 1x, ./imagestablet/app2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/app2-mobile@1x.webp 1x, ./images/mobile/app2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images/mobile/app2-mobile@1x.jpg 1x, ./images/mobile/app2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./images/desktop/app2-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                               <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Проект Boxes</h2>                  
+                                <p class="portfolio-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/website2-desktop@1x.webp 1x, ./images//desktop/website2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images//desktop/website2-desktop@1x.jpg 1x, ./images/desktop/website2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images//tablet/website2-tablet@1x.webp 1x, ./images/tablet/website2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images//tablet/website2-tablet@1x.jpg 1x, ./images/tablet/website2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images//mobile/website2-mobile@1x.webp 1x, ./images/mobile/website2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images//mobile/website2-mobile@1x.jpg 1x, ./images/mobile/website2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="/images/desktop/website2-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Inspiration has no Borders</h2>
+                                <p class="portfolio-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/design2-desktop@1x.webp 1x, ./images/desktop/design2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/desktop/design2-desktop@1x.jpg 1x, ./images/desktop/design2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/design2-tablet@1x.webp 1x, ./images/tablet/design2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images/tablet/design2-tablet@1x.jpg 1x, ./images/tablet/design2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/design2-mobile@1x.webp 1x, ./images/mobile/design2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images/mobile/design2-mobile@1x.jpg 1x, ./images/mobile/design2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./images/desktop/design2-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Издание Limited Edition</h2>
+                                <p class="portfolio-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/marketing2-desktop@1x.webp 1x, ./images/desktop/marketing2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/desktop/marketing2-desktop@1x.jpg 1x, ./imagesdesktop/marketing2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/marketing2-tablet@1x.webp 1x, ./images/tablet/marketing2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images/tablet/marketing2-tablet@1x.jpg 1x, ./images/tablet/marketing2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/marketing2-mobile@1x.webp 1x, ./images/mobile/marketing2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images/mobile/marketing2-mobile@1x.jpg 1x, ./images/mobile/marketing2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./images/desktop/marketing2-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Проект LAB</h2>               
+                                <p class="portfolio-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./images/desktop/app3-desktop@1x.webp 1x, ./images/desktop/app3-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/desktop/app3-desktop@1x.jpg 1x, ./images/desktop/app3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/app3-tablet@1x.webp 1x, ./images/tablet/app3-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./images/tablet/app3-tablet@1x.jpg 1x, ./images/tablet/app3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/app3-mobile@1x.webp 1x, ./images/mobile/app3-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./images/mobile/app3-mobile@1x.jpg 1x, ./images/mobile/app3-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./images/desktop/app3-desktop@1x.jpg" alt="Технокряк">
+                                </picture>
+                               <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Growing Business</h2>              
+                                <p class="portfolio-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
-                              
-                <ul class="portfolio-item">
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                        <div class="box">
-                            <img src="./images/веб-сайт.jpg" alt="Веб-сайт" width="370" height="294">
-                               <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div>
-                            <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Технокряк</h2>
-                            <p class="text-portfolio">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                            <div class="box"> 
-                                <img src="./images/дизайн.jpg" alt="дизайн" width="370" height="294">
-                            <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div>
-                            
-                            <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Постер New-Orlean vs Golden Star</h2>
-                            <p class="text-portfolio">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                            <div class="box"> 
-                                <img src="./images/приложение.jpg" alt="приложение" width="370" height="294">
-                            <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div> 
-                                   <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Ресторан Seafood</h2>
-                            <p class="text-portfolio">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                            <div class="box"> 
-                                <img src="./images/маркетинг.jpg" alt="маркетинг" width="370" height="294">
-                            <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div> 
-                                   <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Проект Prime</h2>
-                            <p class="text-portfolio">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                            <div class="box">
-                                <img src="./images/приложение2.jpg" alt="приложение" width="370" height="294">
-                            <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div> 
-                                   <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Проект Boxes</h2>
-                            <p class="text-portfolio">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                            <div class="box"> 
-                                <img src="./images/вебсайт2.jpg" alt="веб-сайт" width="370" height="294">
-                            <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div> 
-                                   <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Inspiration has no Borders</h2>
-                            <p class="text-portfolio">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                            <div class="box">
-                                <img src="./images/дизайн2.jpg" alt="дизайн" width="370" height="294">
-                            <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div> 
-                                   <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Издание Limited Edition</h2>
-                            <p class="text-portfolio">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                            
-                            <div class="box"> 
-                                <img src="./images/маркетинг2.jpg" alt="маркетинг" width="370" height="294">
-                            <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div>
-                                   <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Проект LAB</h2>
-                            <p class="text-portfolio">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-element">
-                        <a class="portfolio-link" href="#">
-                            <div class="box">
-                                <img src="./images/приложени3.jpg" alt="приложение" width="370" height="294">
-                            <div class="overlay">
-                                   <p class="textport">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
-                            </div>
-                                   <div class="portfolio-name">
-                            <h2 class="features-tittle-pf">Growing Business</h2>
-                            <p class="text-portfolio">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                
-                
-                </ul>
-
-    </div>
-
-       </section>
-
+            </div>
+        </section>
     </main>
+
+
 
     <footer class="footer">
       <div class="container">
