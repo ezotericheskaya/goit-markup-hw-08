@@ -2,9 +2,42 @@
   background-color: $backgr-color-botton;
 }
 
-.team-section .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team-section {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      // margin-left: auto;
+      // margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+}
+
+.team-tittles {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 
 .text-team {
@@ -18,18 +51,43 @@
 }
 
 .team-list {
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .team-item {
-  width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-last-child(2n) {
+      margin-right: 30px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-    padding-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+      padding-bottom: 0;
+    }
+    // @media screen and (max-width: 480px) {
+    //   width: 100%;
+    // }
   }
 }
 
@@ -40,8 +98,6 @@
   padding-left: 30px;
   text-align: center;
   background-color: $accent-white-color;
-
-  /* outline: 2px solid red; */
 }
 
 .names-tittle {
@@ -97,7 +153,6 @@
 }
 
 .social-icon {
-  /* fill: #afb1b8; */
   width: 20px;
   height: 20px;
 }
