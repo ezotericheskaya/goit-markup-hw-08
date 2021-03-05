@@ -7,10 +7,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width: 768px) {
-      // margin-left: auto;
-      // margin-right: auto;
-    }
     @media screen and (min-width: 1200px) {
       padding-top: 94px;
       padding-bottom: 94px;
@@ -62,6 +58,10 @@
 }
 
 .team-item {
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -85,9 +85,6 @@
       margin-right: 30px;
       padding-bottom: 0;
     }
-    // @media screen and (max-width: 480px) {
-    //   width: 100%;
-    // }
   }
 }
 
@@ -115,7 +112,6 @@
   display: flex;
   align-items: center;
   padding: 0;
-  /* outline: solid blue; */
 }
 
 .icon-link {

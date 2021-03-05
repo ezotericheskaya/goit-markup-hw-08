@@ -538,7 +538,7 @@ a {
 }
 
 .business-section {
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -655,6 +655,12 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .team-item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .team-item:not(:last-child) {
     margin-bottom: 30px;
@@ -683,6 +689,7 @@ a {
 }
 
 .team-names {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
@@ -706,7 +713,6 @@ a {
   display: flex;
   align-items: center;
   padding: 0;
-  /* outline: solid blue; */
 }
 
 .icon-link {
