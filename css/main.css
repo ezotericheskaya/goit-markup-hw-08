@@ -770,7 +770,7 @@ a {
 @media screen and (max-width: 1199px) {
   .clients-tittle {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
@@ -793,6 +793,7 @@ a {
 
 @media screen and (max-width: 1199px) {
   .clients-list {
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -824,17 +825,17 @@ a {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .clients-item {
-    width: 210px;
+    width: 226px;
     height: 90px;
     margin: 15px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .clients-item {
-    width: 226px;
+    width: calc((100% - 15px * 4) / 2);
     height: 90px;
     margin: 15px;
   }

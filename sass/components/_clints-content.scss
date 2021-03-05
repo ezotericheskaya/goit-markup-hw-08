@@ -12,7 +12,7 @@
 .clients-tittle {
   @media screen and (max-width: 1199px) {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
@@ -33,6 +33,7 @@
 }
 .clients-list {
   @media screen and (max-width: 1199px) {
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,14 +65,14 @@
 }
 
 .clients-item {
-  @media screen and (max-width: 767px) {
-    width: 210px;
+  @media screen and (max-width: 1199px) {
+    width: 226px;
     height: 90px;
     margin: 15px;
   }
 
-  @media screen and (max-width: 1199px) {
-    width: 226px;
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 15px * 4) / 2);
     height: 90px;
     margin: 15px;
   }
