@@ -1,55 +1,93 @@
-// .section-features .container {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.section-features {
+  padding-top: 60px;
+}
 
-// .features-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  outline: 1px red;
+}
 
-// .features-tittle {
-//   margin-top: 30px;
-//   margin-bottom: 0;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 2;
-//   text-transform: uppercase;
-//   letter-spacing: 0.03em;
-//   color: $tittle-text-color;
-// }
+.feauture-item {
+  width: 100%;
+  max-width: 450px;
+  max-height: 120px;
+  margin-bottom: 30px;
 
-// .items {
-//   width: calc((100% - 3 * 30px) / 4);
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: 70px, 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $backgr-color-botton;
+    border-radius: 4px;
+  }
+}
+// не отображаются свг
+@each $features in antenna, clock, diagram, astronaut {
+  .#{$features}::before {
+    background-image: url("../images/#{$features}.svg");
+  }
+}
 
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
+.features-tittle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 142;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $tittle-text-color;
+}
+.text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $primery-text-color;
+}
 
-//   &::before {
-//     display: block;
-//     content: "";
-//     height: 120px;
-//     background-size: 70px, 70px;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-color: $backgr-color-botton;
-//     border-radius: 4px;
-//   }
-// }
-// // не отображаются свг
-// @each $features in antenna, clock, diagram, astronaut {
-//   .#{$features}::before {
-//     background-image: url("../images/#{$features}.svg");
-//   }
-// }
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+  .features-tittle {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $tittle-text-color;
+  }
 
-// .text {
-//   margin-top: 10px;
-//   margin-bottom: 0;
-//   font-weight: normal;
-//   font-size: 14px;
-//   line-height: 24px;
-//   letter-spacing: 0.03em;
-//   color: $primery-text-color;
-// }
+  .feauture-item {
+    width: calc((100% - 3 * 30px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      height: 120px;
+      background-size: 70px, 70px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $backgr-color-botton;
+      border-radius: 4px;
+    }
+  }
+  // не отображаются свг
+  @each $features in antenna, clock, diagram, astronaut {
+    .#{$features}::before {
+      background-image: url("../images/#{$features}.svg");
+    }
+  }
+}
