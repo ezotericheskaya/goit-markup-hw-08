@@ -127,7 +127,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 20px;
     margin-bottom: 30px;
     padding-left: 30px;
@@ -138,7 +137,9 @@
     letter-spacing: 0.03em;
     color: #757575;
   }
+
   @media screen and (min-width: 678px) {
+    justify-content: center;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -217,7 +218,7 @@
     text-decoration: underline;
     margin-left: 0;
   }
-  @media screen and (min-width: 678px) {
+  @media screen and (min-width: 480px) {
   }
   margin-left: 5px;
 }
