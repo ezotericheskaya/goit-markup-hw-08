@@ -61,8 +61,10 @@ a {
 }
 
 .button-primary {
-  display: inline-block;
+  display: block;
   padding: 10px 32px;
+  margin-right: auto;
+  margin-left: auto;
   border: 1px solid $accent-button-color;
   border-radius: 4px;
   min-width: 200px;
