@@ -122,19 +122,28 @@
 }
 
 .topic-option {
-  flex-wrap: wrap;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding-left: 30px;
+  @media screen and (min-width: 320px) {
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 30px;
 
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  @media screen and (min-width: 678px) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
 
 .form-icon {
@@ -203,13 +212,12 @@
 }
 
 .link-checkbox {
-  color: $accent-button-color;
-  text-decoration: underline;
+  @media screen and (min-width: 320px) {
+    color: $accent-button-color;
+    text-decoration: underline;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 678px) {
+  }
   margin-left: 5px;
 }
-
-// .contact-form .button-primary {
-//   position: absolute;
-//   left: 160px;
-//   bottom: 40px;
-// }

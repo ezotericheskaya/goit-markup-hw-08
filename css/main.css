@@ -370,7 +370,7 @@ a {
 }
 
 .burger-contact-list:not(:last-child) {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .burger-contact-phone {
@@ -1501,19 +1501,31 @@ a {
   height: 15px;
 }
 
-.topic-option {
-  flex-wrap: wrap;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding-left: 30px;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+@media screen and (min-width: 320px) {
+  .topic-option {
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+
+@media screen and (min-width: 678px) {
+  .topic-option {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
 
 .form-icon {
@@ -1579,8 +1591,14 @@ a {
 }
 
 .link-checkbox {
-  color: #2196f3;
-  text-decoration: underline;
   margin-left: 5px;
+}
+
+@media screen and (min-width: 320px) {
+  .link-checkbox {
+    color: #2196f3;
+    text-decoration: underline;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
